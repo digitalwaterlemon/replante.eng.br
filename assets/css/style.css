@@ -8528,3 +8528,40 @@ textarea.form-control {
         ul.icons li a:active {
           background-color: rgba(255, 255, 255, 0.175);
         }
+        /* Estilo para os Cartões de Sócios */
+.team-member {
+    background-color: #e0e0e0; /* Aquele cinza do seu card */
+    padding: 30px;
+    border-radius: 8px; /* Cantos arredondados */
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.member-img img {
+    width: 200px; /* Tamanho fixo da foto */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.member-info h3 {
+    color: #1a4d2e; /* Verde da Replante */
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.member-info p {
+    color: #333;
+    font-size: 1rem; /* Tamanho de leitura bom */
+    line-height: 1.6;
+}
+
+/* Ajuste para Celular (Fica um embaixo do outro) */
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+}
