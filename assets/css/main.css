@@ -1909,3 +1909,42 @@ input, select, textarea {
         padding-bottom: 0;
     }
 }
+
+/* ==========================================================================
+   CORREÇÃO RESPONSIVA - SÓCIOS (MOBILE)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    
+    /* Faz a foto ficar em cima e o texto embaixo */
+    .profile-card {
+        flex-direction: column; 
+        gap: 20px; /* Reduz o espaço entre eles (era 40px) */
+        text-align: center; /* Centraliza visualmente o conjunto */
+    }
+
+    /* Ajusta o tamanho da foto para o celular */
+    .profile-photo {
+        flex: 0 0 auto; /* Remove a trava fixa de 200px */
+        width: 100%;
+        max-width: 280px; /* Tamanho máximo para a foto não estourar */
+        margin: 0 auto; /* Garante que a foto fique no meio */
+    }
+
+    /* Garante que o texto tenha espaço total */
+    .profile-content {
+        width: 100%;
+        text-align: left; /* Mantém o texto alinhado à esquerda para facilitar leitura */
+    }
+    
+    /* Opcional: Ajuste fino no título para mobile */
+    .profile-content h3 {
+        text-align: center; /* Fica mais bonito o nome centralizado abaixo da foto */
+        margin-bottom: 0.5em;
+    }
+    
+    .profile-content .job-title {
+        display: block;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+}
